@@ -1,0 +1,22 @@
+{
+  "name": "amco",
+  "version": "1.0.0",
+  "description": "A simple website for clothing business",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mzahedalam/demo-amco.git"
+  },
+  "author": "M Zahed Alam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mzahedalam/demo-amco/issues"
+  },
+  "homepage": "https://github.com/mzahedalam/demo-amco#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
