@@ -16,7 +16,7 @@ body {
 
 a {
   text-decoration: none;
-  color: $dark-color;
+  color: $dark-gray;
 }
 
 ul {
@@ -31,6 +31,38 @@ nav img {
   width: 20%;
   height: 20%;
 }
+.container {
+  display: grid;
+  grid-template-areas: 
+    'header header header'
+    'showcase showcase showcase'
+    'about about about'
+    'services services services'
+    'product product product'
+    'certification certification certification'
+    'footer footer footer';
+}
+.header {
+  grid-area: header;
+}
+.showcase {
+  grid-area: showcase;
+}
+.about {
+  grid-area: about;
+}
+.services {
+  grid-area: services;
+}
+.product {
+  grid-area: product;
+}
+.certification {
+  grid-area: certification;
+}
+.footer {
+  grid-area: footer;
+}
 
 #main-nav {
   display: flex;
@@ -42,7 +74,7 @@ nav img {
   }
   
   li {
-    padding: 1rem 1rem;
+    padding: 1rem .5rem;
   }
   
   a {
@@ -51,3 +83,17 @@ nav img {
     border-bottom: 3px transparent solid;
   }
 }
+
+.showcase {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .about {
+
+  }
