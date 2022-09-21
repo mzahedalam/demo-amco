@@ -53,6 +53,7 @@ nav img {
 }
 .services {
   grid-area: services;
+  text-align: center;
 }
 .product {
   grid-area: product;
@@ -94,6 +95,61 @@ nav img {
     }
   }
 
-  .about {
+.about {
+  h1 {text-align: center;}
 
   }
+
+#boxset {
+
+  &-1 {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  &-2 {
+    display: flex;
+    text-align: center;
+  }
+}
+
+.item {
+  flex: 1;
+  padding: 1rem;
+}
+
+.box {
+  &-1 {
+    img {
+      width: 100%;
+    }
+  }
+  &-2 {
+    img {
+      width: 100%;
+    }
+  }
+  &-3 {
+    img {
+      width: 100%;
+    }
+  }
+  &-4 {
+    img {
+      width: 100%;
+    }
+  }
+  &-5 {
+    h2 {
+      font-size: 22px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &-6 {
+    img {
+      width: 100%;
+    }
+  }
+}
