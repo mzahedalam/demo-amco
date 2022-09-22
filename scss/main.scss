@@ -57,6 +57,7 @@ nav img {
 }
 .product {
   grid-area: product;
+  text-align: center;
 }
 .certification {
   grid-area: certification;
@@ -153,3 +154,38 @@ nav img {
     }
   }
 }
+
+.products {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1rem;
+  justify-content: center;
+
+  .item {
+    &-1{
+        background-color: $yellow;
+        h3 {
+          padding: 2rem 0;
+        }
+    }
+    &-4{
+      background-color: #857077;
+      h3 {
+        padding: 2rem 0;
+      }
+    }
+    &-5{
+      background-color: $pink;
+      h3 {
+        padding: 2rem 0;
+      }
+    }
+    &-8{
+      background-color: $blue;
+      h3 {
+        padding: 2rem 0;
+      }
+    }
+  }
+}
+
