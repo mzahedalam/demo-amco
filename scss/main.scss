@@ -12,6 +12,7 @@ body {
   font-family: 'Lato', sans-serif; 
   line-height: 1.6;
   background: #fff;
+  color: $dark-gray;
 }
 
 a {
@@ -177,6 +178,7 @@ nav img {
   .item {
     &-1{
         background-color: $yellow;
+        color: #fff;
         h3 {
           padding: 2rem 0;
         }
@@ -186,6 +188,7 @@ nav img {
     }
     &-4{
       background-color: #857077;
+      color: #fff;
       h3 {
         padding: 2rem 0;
       }
@@ -195,6 +198,7 @@ nav img {
     }
     &-5{
       background-color: $pink;
+      color: #fff;
       h3 {
         padding: 2rem 0;
       }
@@ -204,6 +208,7 @@ nav img {
     }
     &-8{
       background-color: $blue;
+      color: #fff;
       h3 {
         padding: 2rem 0;
       }
@@ -243,9 +248,24 @@ nav img {
     &-4{
       li {
         font-size: 26px;
-        color: $dark-gray;
       }
     }
   }
 }
+
+.container-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+
+  .item {
+    &-1{
+      
+    }
+    &-2{
+      
+    }
+  }
+}
+
 
