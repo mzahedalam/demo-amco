@@ -68,6 +68,7 @@ nav img {
 }
 .footer {
   grid-area: footer;
+  margin: 2rem 0rem;
 }
 
 #main-nav {
@@ -220,6 +221,18 @@ nav img {
 
 .footer {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: stretch;
+  gap: 2rem;
+  color: $dark-gray;
+  h3 {
+    padding-bottom: 1rem;
+  }
+  .box {
+    &-1{
+      border-right: 1px solid $dark-gray;
+      padding: .3rem;
+    }
+  }
 }
 
