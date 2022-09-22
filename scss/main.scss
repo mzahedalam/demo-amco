@@ -231,12 +231,20 @@ nav img {
   gap: 2rem;
   color: $dark-gray;
   h3 {
-    padding-bottom: 1rem;
+    border-bottom: $yellow 1px dotted;
+  }
+  p {
+    padding-top: 1rem;
+  }
+  ul > li {
+    padding-top: 1rem;
   }
   .box {
-    &-1{
-      border-right: 1px solid $dark-gray;
-      padding: .3rem;
+    &-4{
+      li {
+        font-size: 26px;
+        color: $dark-gray;
+      }
     }
   }
 }
