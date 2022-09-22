@@ -61,6 +61,10 @@ nav img {
 }
 .certification {
   grid-area: certification;
+  h1 {
+    text-align: center;
+    padding: 2rem 0;
+  }
 }
 .footer {
   grid-area: footer;
@@ -202,5 +206,20 @@ nav img {
       }
     }
   }
+}
+
+.certifications {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  img {
+    width: 80%;
+  }
+  
+
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
 }
 
