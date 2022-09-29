@@ -43,7 +43,7 @@ nav img {
 
 .container {
   display: grid;
-  grid-template-areas: 'header header header' 'showcase showcase showcase' 'about about about' 'services services services' 'product product product' 'certification certification certification' 'footer footer footer'; }
+  grid-template-areas: 'header header header' 'content content content' 'footer footer footer'; }
   .container h1 {
     margin: 2rem;
     text-align: center; }
@@ -51,22 +51,8 @@ nav img {
 .header {
   grid-area: header; }
 
-.showcase {
-  grid-area: showcase; }
-
-.about {
-  grid-area: about; }
-
-.services {
-  grid-area: services;
-  text-align: center; }
-
-.product {
-  grid-area: product;
-  text-align: center; }
-
-.certification {
-  grid-area: certification; }
+.content {
+  grid-area: content; }
 
 .footer {
   grid-area: footer;
@@ -192,35 +178,56 @@ nav img {
   .footer .box-4 li {
     color: #5c6464; }
 
-.container-about {
+.history {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   margin-top: 1.5rem;
   text-align: center; }
-  .container-about .item img {
+  .history .item img {
     width: 100%; }
-  .container-about .item-3 h2 {
-    color: #cc539c; }
-  .container-about .item-3 p {
-    padding: 2rem;
+  .history .item-1 {
+    background-color: #e6c678; }
+  .history .item-2 {
+    background-color: #e6c678; }
+  .history .item-3 {
     background-color: #cc539c;
-    color: #fff;
-    height: 100%; }
-  .container-about .item-4 h2 {
-    color: #4c54a5; }
-  .container-about .item-4 p {
-    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem; }
+    .history .item-3 h2 {
+      color: #fff; }
+    .history .item-3 p {
+      padding: 2rem;
+      color: #fff; }
+  .history .item-4 {
     background-color: #4c54a5;
-    color: #fff;
-    height: 100%; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem; }
+    .history .item-4 h2 {
+      color: #fff; }
+    .history .item-4 p {
+      padding: 1.5rem;
+      background-color: #4c54a5;
+      color: #fff; }
 
-.value-section {
+.value {
   display: grid;
-  border: 1px solid red;
+  grid-template-columns: repeat(5, 1fr);
   text-align: center; }
-  .value-section .values {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 1rem;
-    justify-content: center; }
+  .value img {
+    width: 40%; }
+
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
+  align-items: center;
+  justify-content: start; }
+  .experience .img-exp img {
+    width: 80%; }

@@ -36,11 +36,7 @@ nav img {
   display: grid;
   grid-template-areas: 
     'header header header'
-    'showcase showcase showcase'
-    'about about about'
-    'services services services'
-    'product product product'
-    'certification certification certification'
+    'content content content'
     'footer footer footer';
   h1 {
     margin: 2rem;
@@ -50,22 +46,8 @@ nav img {
 .header {
   grid-area: header;
 }
-.showcase {
-  grid-area: showcase;
-}
-.about {
-  grid-area: about;
-}
-.services {
-  grid-area: services;
-  text-align: center;
-}
-.product {
-  grid-area: product;
-  text-align: center;
-}
-.certification {
-  grid-area: certification;
+.content {
+  grid-area: content;
 }
 .footer {
   grid-area: footer;
@@ -253,7 +235,7 @@ nav img {
   }
 }
 
-.container-about {
+.history {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -263,42 +245,71 @@ nav img {
     img {
       width: 100%;
     }
+    &-1{
+      background-color: $yellow;
+    }
+    &-2{
+      background-color: $yellow;
+    }
     &-3{
+      background-color: $pink;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3rem;
       h2 {
-        color: $pink;
+        color: #fff;
       }
       p {
         padding: 2rem;
-        background-color: $pink;
+        // background-color: $pink;
         color: #fff;
-        height: 100%;
       }
     }
     &-4{
+      background-color: $blue;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3rem;
       h2 {
-        color: $blue;
+        color: #fff;
       }
       p {
         padding: 1.5rem;
         background-color: $blue;
         color: #fff;
-        height: 100%;
       }
     }
   }
 }
 
-.value-section {
+.value {
   display: grid;
+  grid-template-columns: repeat(5, 1fr);
   
-  border: 1px solid red;
   text-align: center;
+  img {
+    width: 40%;
+  }
+  }
 
-  .values {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 1rem;
-    justify-content: center;
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
+  align-items: center;
+  justify-content: start;
+
+  .img-exp{
+    img {
+      width: 80%;
+    }
+  .text-exp{
+    
+  }
   }
 }
 

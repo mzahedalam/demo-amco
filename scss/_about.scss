@@ -1,46 +1,9 @@
-@import 'config';
-@import 'utilities';
-// General Style
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-body {
-  font-family: 'Lato', sans-serif; 
-  line-height: 1.6;
-  background: #fff;
-  color: $dark-gray;
-}
-
-a {
-  text-decoration: none;
-  color: $dark-gray;
-}
-
-ul {
-  list-style: none;
-}
-
-h1, h2, h3, h4 {
-  text-transform: uppercase;
-}
-
-nav img {
-  width: 20%;
-  height: 20%;
-}
-.container {
+.about_container {
   display: grid;
   grid-template-areas: 
     'header header header'
-    'about about about'
-    'services services services'
-    'product product product'
-    'certification certification certification'
-    'footer footer footer';
+    'history history history'
+    'values values values';
   h1 {
     margin: 2rem;
     text-align: center;
@@ -49,69 +12,23 @@ nav img {
 .header {
   grid-area: header;
 }
-.showcase {
-  grid-area: showcase;
+.history {
+  grid-area: history;
 }
-.about {
-  grid-area: about;
-}
-.services {
-  grid-area: services;
-  text-align: center;
-}
-.product {
-  grid-area: product;
-  text-align: center;
-}
-.certification {
-  grid-area: certification;
-}
-.footer {
-  grid-area: footer;
-  margin: 2rem 0rem;
+.values {
+  grid-area: values;
 }
 
-#main-nav {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1rem;
-
-  ul {
-    display: flex;
-  }
-  
-  li {
-    padding: 1rem .5rem;
-  }
-  
-  a {
-    text-decoration: none;
-    text-transform: uppercase;
-    border-bottom: 3px transparent solid;
-  }
-}
-
-.showcase {
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-    width: 100%;
-    img {
-      width: 100%;
-    }
-  }
-
-.about {
-  h1 {text-align: center;}
-
-  }
-
-.boxset {
+.history {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 2fr 2fr;
+}
+.values {
+  display: flex;
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
 }  
-#boxset {
+.box{
 
   &-1 {
     display: flex;
@@ -252,7 +169,7 @@ nav img {
   }
 }
 
-.container-about {
+.about {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
