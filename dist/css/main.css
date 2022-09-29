@@ -195,4 +195,32 @@ nav img {
 .container-about {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: center; }
+  justify-items: center;
+  margin-top: 1.5rem;
+  text-align: center; }
+  .container-about .item img {
+    width: 100%; }
+  .container-about .item-3 h2 {
+    color: #cc539c; }
+  .container-about .item-3 p {
+    padding: 2rem;
+    background-color: #cc539c;
+    color: #fff;
+    height: 100%; }
+  .container-about .item-4 h2 {
+    color: #4c54a5; }
+  .container-about .item-4 p {
+    padding: 1.5rem;
+    background-color: #4c54a5;
+    color: #fff;
+    height: 100%; }
+
+.value-section {
+  display: grid;
+  border: 1px solid red;
+  text-align: center; }
+  .value-section .values {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-content: center; }
