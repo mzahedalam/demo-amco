@@ -231,3 +231,7 @@ nav img {
   justify-content: start; }
   .experience .img-exp img {
     width: 80%; }
+
+.text-exp {
+  display: flex;
+  flex-direction: row; }
