@@ -172,9 +172,12 @@ nav img {
   .footer h3 {
     border-bottom: #e6c678 1px dotted; }
   .footer p {
+    font-size: small;
     padding-top: 1rem; }
   .footer ul > li {
-    padding-top: 1rem; }
+    padding-top: .3rem;
+    font-size: small;
+    line-height: 1.5rem; }
   .footer .box-4 li {
     color: #5c6464; }
 
@@ -232,6 +235,37 @@ nav img {
   .experience .img-exp img {
     width: 80%; }
 
-.text-exp {
+.text-exp-box {
   display: flex;
-  flex-direction: row; }
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .text-exp-box .highlight {
+    font-size: 48px;
+    font-weight: bold;
+    color: #cc539c; }
+
+.box-1 {
+  flex-basis: 50%;
+  font-weight: bold; }
+
+.box-2 {
+  flex-basis: 50%;
+  font-weight: bold; }
+
+.message {
+  display: flex; }
+
+.text-msg {
+  flex-basis: 70%;
+  padding: 1rem; }
+  .text-msg h2 {
+    text-align: center; }
+
+.img-msg {
+  text-align: center;
+  flex-basis: auto;
+  align-self: center; }
+  .img-msg img {
+    width: 55%;
+    border-radius: 75%; }

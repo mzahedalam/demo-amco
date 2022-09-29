@@ -217,14 +217,18 @@ nav img {
   justify-items: stretch;
   gap: 2rem;
   color: $dark-gray;
+  
   h3 {
     border-bottom: $yellow 1px dotted;
   }
   p {
+    font-size: small;
     padding-top: 1rem;
   }
   ul > li {
-    padding-top: 1rem;
+    padding-top: .3rem;
+    font-size: small;
+    line-height: 1.5rem;
   }
   .box {
     &-4{
@@ -309,9 +313,47 @@ nav img {
     }
   }
 }
-.text-exp{
+.text-exp-box{
+  // border: 1px solid red;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .highlight {
+    font-size: 48px;
+    font-weight: bold;
+    color: $pink;
+  }
+}
+.box-1 {
+  flex-basis: 50%;
+  font-weight: bold;
+  
+}
+.box-2 {
+  flex-basis: 50%;
+  font-weight: bold;
 }
 
+.message {
+  display: flex;
+  // column-gap: 0.5rem;
+}
+.text-msg {
+  flex-basis: 70%;
+  padding: 1rem;
+  h2{
+    text-align: center;
+  }
+}
+.img-msg {
+  text-align: center;
+  flex-basis: auto;
+  align-self: center;
+  // border: 1px solid red;
+  img {
+    width: 55%;
+    border-radius: 75%;
+  }
+}
 
