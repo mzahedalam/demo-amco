@@ -50,6 +50,16 @@ nav img {
 
 .header {
   grid-area: header; }
+  .header .banner {
+    background: url("../img/page-banner.jpeg"), no-repeat, 100% 100%;
+    opacity: 0.5;
+    background-color: #857077;
+    height: 60%;
+    color: #e6c678;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem; }
 
 .content {
   grid-area: content; }
